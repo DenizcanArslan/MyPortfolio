@@ -184,3 +184,15 @@ font-family: 'Nunito Sans', sans-serif;
 font-size: 1.3rem !important;
 text-align-last: center;
 }
+
+
+.additional-gap{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.tech-stack-heading{
+    font-family: 'Libre Baskerville', serif;
+font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+}

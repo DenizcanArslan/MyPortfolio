@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import WelcomingSection from './components/WelcomingSection';
 import AboutMe from './components/AboutMe';
+import TechStack from './components/TechStack';
 
 
 
@@ -14,6 +15,8 @@ function App() {
      <Navbar/>
      <WelcomingSection/>
      <AboutMe/>
+     <TechStack/>
+
    </>
        
  
