@@ -5,7 +5,7 @@ import logo from "../assets/images/denizcanArslanLogo.jpeg"
 const Navbar = () => {
 
     
-     const [isMobile, setIsMobile] = useState(false);
+     const [isMobile, setIsMobile] = useState(false);  //false=desktop - true=mobile
 
      const handleResize = () => {
        setIsMobile(window.innerWidth <= 991);
@@ -57,6 +57,12 @@ const Navbar = () => {
            
             <li className="nav-item  px-3">
               <a className="nav-link" href="#">
+                About me
+              </a>
+            </li>
+
+            <li className="nav-item  px-3">
+              <a className="nav-link" href="#">
                 Tech Stack
               </a>
             </li>
@@ -72,12 +78,12 @@ const Navbar = () => {
             </li>
 
             <li className={`nav-item  px-1 `}>
-              <a className="nav-link" href="https://github.com/DenizcanArslan" target="_blank">
+              <a className="nav-link" href="https://github.com/DenizcanArslan" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-github"></i>
               </a>
             </li>
             <li className={`nav-item  px-1 `}>
-              <a className="nav-link" href="https://www.instagram.com/denizcan.arslan/" target="_blank">
+              <a className="nav-link" href="https://www.instagram.com/denizcan.arslan/" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-instagram"></i>             
                </a>
             </li>
