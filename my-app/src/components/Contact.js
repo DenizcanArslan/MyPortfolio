@@ -61,15 +61,15 @@ const Contact = () => {
               <div className='col-sm-12 col-md-6'>
                 <textarea name='message' className='form-control input-box' required placeholder='Message' />
               </div>
-            </div>
-
-            <div className='col-12 text-center mt-5'>
+            </div>    
+          </div>
+          
+          <div className='col-12 text-center mt-5'>
             <ReCAPTCHA sitekey='6Lf8XDopAAAAAE44w8Oj3qb3X1ZAKNMNPbsvYVqW'
                 onChange={(val)=>setCapVal(val)}
-            />
+            className="mb-5"/>
               <input type='submit' value='Send' disabled={!capVal} className='btn btn-primary btn-grad' />
             </div>
-          </div>
         </form>
       </div>
 
