@@ -4,7 +4,7 @@ import DenizcanArslanCircled from "../assets/images/Denizcan-Arslan-modified.png
 
 const AboutMe = () => {
   return (
-    <div class="container text-center additional-gap">
+    <div class="container text-center additional-gap" id='AboutMe'>
         <div class="row">
         <div className='col-md-12 py-5'>
         <hr style={{width:"7rem",margin:"auto"}} className="py-5"/>

@@ -31,9 +31,9 @@ const Navbar = () => {
 
   return (
       <>
-    <nav className="navbar navbar-expand-lg bg-white text-capitalize ">
+    <nav className="navbar navbar-expand-lg bg-white text-capitalize"  id="scrollHome">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="#scrollHome">
           <img src={logo} alt="Denizcan Arslan Logo" className="img-fluid"  style={{ width: '10rem' }} />
         </a>
         <button
@@ -50,29 +50,29 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto mx-2">
             <li className="nav-item px-3">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active" aria-current="page" href="#scrollHome">
                 Home
               </a>
             </li>
            
             <li className="nav-item  px-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#AboutMe">
                 About me
               </a>
             </li>
 
             <li className="nav-item  px-3">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#TechStack">
                 Tech Stack
               </a>
             </li>
-            <li className="nav-item  px-3">
+            {/* <li className="nav-item  px-3">
               <a className="nav-link" href="#">
                 Portfolio
               </a>
-            </li>
+            </li> */}
             <li className={`nav-item px-3 ${isMobile ? '' : ' border-end'}`}>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

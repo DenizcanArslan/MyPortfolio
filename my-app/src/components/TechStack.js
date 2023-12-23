@@ -23,7 +23,7 @@ import githubLogo from "../assets/icons/github-logo.svg";
 import canvaLogo from "../assets/icons/canva-logo.svg";
 const TechStack = () => {
   return (
-    <div className='container text-center additional-gap'>
+    <div className='container text-center additional-gap' id='TechStack'>
     <h2 className='WelcomingHeading'>Tech Stack</h2>
      <div className='row' style={{marginTop:"7rem"}}>
          <div className='col-lg-4 px-5 mt-sm-5 mt-lg-0'>

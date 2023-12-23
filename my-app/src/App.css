@@ -196,3 +196,31 @@ text-align-last: center;
 font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
 }
+
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+   border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 1.25rem #eee;
+    border-radius: 0.625rem;
+  
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .input-box{
+    margin: 1rem;
+  }
+ 
+
