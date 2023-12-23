@@ -1,10 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ReCAPTCHA from "react-google-recaptcha";
+
+//6Lf8XDopAAAAAE44w8Oj3qb3X1ZAKNMNPbsvYVqW// KEY FOR RECAPTCHA
 
 const Contact = () => {
   const form = useRef();
+
+  const [capVal,setCapVal]=useState(null); 
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -58,7 +64,10 @@ const Contact = () => {
             </div>
 
             <div className='col-12 text-center mt-5'>
-              <input type='submit' value='Send' className='btn btn-primary btn-grad' />
+            <ReCAPTCHA sitekey='6Lf8XDopAAAAAE44w8Oj3qb3X1ZAKNMNPbsvYVqW'
+                onChange={(val)=>setCapVal(val)}
+            />
+              <input type='submit' value='Send' disabled={!capVal} className='btn btn-primary btn-grad' />
             </div>
           </div>
         </form>
